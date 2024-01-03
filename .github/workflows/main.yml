@@ -18,13 +18,7 @@ jobs:
       run: npm i
 
     - name: Lint the codebase
-      run: npm lint
+      run: npm run lint
 
     - name: Test our code
       run: npm run test
-
-    - name: Login
-      run: npx warp login --api-key=4iYzFr0EdoGwLB1RYaseFq
-
-    - name: Deploy
-      run: npx warp deploy --project ${ORG_PROJECT} --env ${DEPLOY_ENV}
